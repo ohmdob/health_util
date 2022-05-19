@@ -1,4 +1,4 @@
-def age_range(age):
+def ageRange(age):
   if age > 0 and age <= 20:
     return '0-20'
   elif age > 21 and age <= 25:
@@ -23,6 +23,17 @@ def age_range(age):
     return '66-70'
   return ''
 
+def bmiRange(bmi):
+  if bmi < 18.5:
+    return 'under weight'
+  elif bmi >= 18.5 and bmi < 23:
+    return 'normal weight'
+  elif bmi >= 23 and bmi < 25:
+    return 'over weight'
+  elif bmi >= 25:
+    return 'obse weight'
+  return ''
+
 def getColumnColor(items):
   color = []
   for x in items:
@@ -31,3 +42,4 @@ def getColumnColor(items):
     elif(x == 'M'):
       color.append('lightblue')
   return color
+
