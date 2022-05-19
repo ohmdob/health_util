@@ -22,3 +22,12 @@ def age_range(age):
   elif age >= 66 and age <= 70:
     return '66-70'
   return ''
+
+def getColumnColor(items):
+  color = []
+  for x in items:
+    if(x == 'F'):
+      color.append('pink')
+    elif(x == 'M'):
+      color.append('lightblue')
+  return color
