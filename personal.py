@@ -43,3 +43,66 @@ def getColumnColor(items):
       color.append('lightblue')
   return color
 
+def ageDMScore(age):
+  if age >= 45 and age < 49:
+    return 1
+  elif age >= 50:
+    return 2
+  return 0
+
+def genderDMScore(sex):
+  if sex == "M":
+    return 2
+  return 0
+
+def bmiDMScore(bmi):
+  if bmi > 23 and bmi < 27.5:
+    return 3
+  elif bmi >= 27.5:
+    return 5
+  return 0
+
+def sys_diasDMScore(sys, dias):
+  if sys >= 140 or dias >= 90:
+    return 2
+  return 0
+
+def smokeScore(smoke):
+  if smoke == "Y":
+    return 1
+  return 0
+
+def bmiHypertensionScore(sex, bmi):
+  if sex == "F" and bmi > 23:
+    return 1
+  elif sex == "M" and bmi > 25:
+    return 1
+  return 0
+
+def sys_diasHypertensionScore(sys, dias):
+  if sys >= 130 or dias >= 80:
+    return 1
+  return 0
+
+def bmiStokeScore(sex, bmi):
+  if sex == "F" and bmi > 23:
+    return 1
+  elif sex == "M" and bmi > 25:
+    return 1
+  return 0
+
+def bmiStokeScore(sex, bmi):
+  if sex == "F" and bmi > 23:
+    return 1
+  elif sex == "M" and bmi > 25:
+    return 1
+  return 0
+
+def sys_diasStokeScore(age, sys, dias):
+  if age < 40 (sys >= 130 or dias >= 80):
+    return 1
+  elif age >= 40 (sys >= 140 or dias >= 90):
+    return 1
+  return 0
+
+
