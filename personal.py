@@ -104,17 +104,10 @@ def bmiStokeScore(sex, bmi):
     return 1
   return 0
 
-def bmiStokeScore(sex, bmi):
-  if sex == "F" and bmi > 23:
-    return 1
-  elif sex == "M" and bmi > 25:
-    return 1
-  return 0
-
 def sys_diasStokeScore(age, sys, dias):
-  if age < 40 (sys >= 130 or dias >= 80):
+  if age < 40 and (sys >= 130 or dias >= 80):
     return 1
-  elif age >= 40 (sys >= 140 or dias >= 90):
+  elif age >= 40 and (sys >= 140 or dias >= 90):
     return 1
   return 0
 
