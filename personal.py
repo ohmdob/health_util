@@ -79,6 +79,19 @@ def bmiHypertensionScore(sex, bmi):
     return 1
   return 0
 
+def ChoLDLHDLTriHypertensionScore(sex, Cholesterol, LDL, HDL, Triglycerides):
+  if Cholesterol >= 200:
+    return 1
+  elif LDL >= 100:
+    return 1
+  elif sex == "M" and HDL >= 40:
+    return 1 
+  elif sex == "F" and HDL >= 50:
+    return 1 
+  elif Triglycerides >= 150:
+    return 1
+  return 0
+
 def sys_diasHypertensionScore(sys, dias):
   if sys >= 130 or dias >= 80:
     return 1
